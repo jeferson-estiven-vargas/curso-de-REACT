@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <style>
+   .galeria{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+
+  .galeria div {
+    text-align: center;
+}
+  
+img {
+    display: block;
+    margin: auto;
+}
+
+</style>
+
+</head>
+<body>
+    <h1 style="text-align: center;">GALERIA DE IMAGENES</h1>
+
+<div style="text-align: center; margin-bottom: 20px;">
+
+    <input type="text" id="imagenURL;" placeholder="URL de la imagen">
+    <input type="text" id="piefoto;" placeholder="pie de foto">
+    <button onclick="agregaimagen()">agregar imagen</button>
+    
+</div>
+
+    <div class="galeria" id="galeriaimagenes">
+
+        <div>
+            <img src="fundamentos/imagenes/canva-mountain-landscape-MADaqpevv8c.jpg" alt="imagen 1" width="300" height="250">
+            <p>pie de foto 1</p>
+        </div>
+
+        <div>
+            <img src="fundamentos/imagenes/gfuvmfczfyosqs1k4ema.jpeg" alt="imagen 2" width="300" height="250">
+            <p>pie de foto 2</p>
+        </div>
+
+        <div>
+            <img src="fundamentos/imagenes/images (1).jpeg" alt="imagen 3" width="300" height="250">
+            <p>pie de foto 3</p>
+        </div>
+
+        <div>
+            <img src="fundamentos/imagenes/images.jpeg" alt="imagen 4" width="300" height="250">
+            <p>pie de foto 4</p>
+        </div>
+
+    </div>
+
+<script>
+function agregaimagen(){
+    var URL=document.getElementById("imagenURL").value;
+    var pie=document.getElementById("piefoto").value;
+    var galeria=document.getElementById("galeriaimagenes");
+    
+
+
+}
+
+
+</script>
+
+</body>
+</html>
